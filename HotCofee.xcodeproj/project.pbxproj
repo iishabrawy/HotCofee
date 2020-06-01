@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5259414322AB7A8E0053CA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259414222AB7A8E0053CA3F /* AppDelegate.swift */; };
-		5259414522AB7A8E0053CA3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259414422AB7A8E0053CA3F /* ViewController.swift */; };
 		5259414822AB7A8E0053CA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5259414622AB7A8E0053CA3F /* Main.storyboard */; };
 		5259414A22AB7A8F0053CA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5259414922AB7A8F0053CA3F /* Assets.xcassets */; };
 		5259414D22AB7A8F0053CA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5259414B22AB7A8F0053CA3F /* LaunchScreen.storyboard */; };
+		5259415622AB7BA60053CA3F /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259415522AB7BA60053CA3F /* OrdersTableViewController.swift */; };
+		5259415822AB7BE00053CA3F /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259415722AB7BE00053CA3F /* AddOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5259413F22AB7A8E0053CA3F /* HotCofee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCofee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5259414222AB7A8E0053CA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5259414422AB7A8E0053CA3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5259414722AB7A8E0053CA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5259414922AB7A8F0053CA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5259414C22AB7A8F0053CA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5259414E22AB7A8F0053CA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5259415522AB7BA60053CA3F /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		5259415722AB7BE00053CA3F /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		5259414122AB7A8E0053CA3F /* HotCofee */ = {
 			isa = PBXGroup;
 			children = (
+				5259415422AB7ABA0053CA3F /* Controllers */,
 				5259414222AB7A8E0053CA3F /* AppDelegate.swift */,
-				5259414422AB7A8E0053CA3F /* ViewController.swift */,
 				5259414622AB7A8E0053CA3F /* Main.storyboard */,
 				5259414922AB7A8F0053CA3F /* Assets.xcassets */,
 				5259414B22AB7A8F0053CA3F /* LaunchScreen.storyboard */,
 				5259414E22AB7A8F0053CA3F /* Info.plist */,
 			);
 			path = HotCofee;
+			sourceTree = "<group>";
+		};
+		5259415422AB7ABA0053CA3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5259415522AB7BA60053CA3F /* OrdersTableViewController.swift */,
+				5259415722AB7BE00053CA3F /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5259414522AB7A8E0053CA3F /* ViewController.swift in Sources */,
+				5259415622AB7BA60053CA3F /* OrdersTableViewController.swift in Sources */,
 				5259414322AB7A8E0053CA3F /* AppDelegate.swift in Sources */,
+				5259415822AB7BE00053CA3F /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UV2E9UFVZH;
 				INFOPLIST_FILE = HotCofee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UV2E9UFVZH;
 				INFOPLIST_FILE = HotCofee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
